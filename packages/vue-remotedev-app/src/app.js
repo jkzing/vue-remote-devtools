@@ -2,14 +2,16 @@ import io from 'socket.io-client'
 import { initDevTools } from 'vue-devtools/src/devtools'
 import Bridge from 'vue-devtools/src/bridge'
 
-export function renderDevtools() {
-  const port = 8098
-  const socket = io('http://localhost:' + port)
+export function renderDevtools(options = {}) {
+  const {
+    host = 'http://localhost',
+    port = 8098
+  } = options
+  const socket = io(`${host}:${port}`)
 
   let reload = null
 
-  socket.on('vue-devtools-disconnect-devtools', () => {
-  })
+  socket.on('vue-devtools-disconnect-devtools', () => {})
 
   socket.on('vue-devtools-init', () => {
     // Reset attached listeners
