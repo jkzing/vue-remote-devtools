@@ -1,4 +1,7 @@
 import Vue from 'vue'
+import { installDevtools } from './src'
+
+installDevtools()
 
 new Vue({
   data: {
