@@ -1,0 +1,8 @@
+{
+  "name": "vue-devtools-app",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jkzing/vue-devtools-app.git",
+  "author": "JingkaiZhao <jingkai.zhao@foxmail.com>",
+  "license": "MIT"
+}
