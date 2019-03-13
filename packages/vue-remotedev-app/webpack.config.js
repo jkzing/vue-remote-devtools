@@ -3,11 +3,11 @@ const createConfig = require('vue-devtools/shells/createConfig')
 
 module.exports = createConfig({
   entry: {
-    devtools: './src/devtools.js',
+    app: './index.js',
   },
   output: {
     path: path.join(__dirname, 'build'),
-    publicPath: '/build/',
+    publicPath: '/dist/',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
