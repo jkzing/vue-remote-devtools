@@ -1,0 +1,13 @@
+{
+  "name": "vue-devtools-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --no-info"
+  },
+  "dependencies": {
+    "socket.io-client": "^2.2.0",
+    "vue-devtools": "*"
+  }
+}
