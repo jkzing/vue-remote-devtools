@@ -3,7 +3,8 @@ const createConfig = require('vue-devtools/shells/createConfig')
 
 module.exports = createConfig({
   entry: {
-    app: './index.js',
+    app: './app/index.js',
+    client: './client/index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),

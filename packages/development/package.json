@@ -1,0 +1,16 @@
+{
+  "name": "development",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot"
+  },
+  "devDependencies": {
+    "vue-remotedev": "*",
+    "vue-remotedev-app": "*",
+    "vue-remotedev-cli": "*",
+    "vue-devtools": "*"
+  }
+}
