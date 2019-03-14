@@ -6,7 +6,7 @@ module.exports = createConfig({
     app: './index.js',
   },
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, 'dist'),
     publicPath: '/dist/',
     filename: '[name].js'
   },

@@ -4,8 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --no-info"
+    "dev": "cd dev && webpack-dev-server --inline --hot --no-info",
+    "build:umd": "webpack --progress --config webpack.config.umd.js",
+    "build:umd:min": "NODE_ENV=production webpack --progress --config webpack.config.umd.js",
+    "build:cjs": "rm -rf ./lib && NODE_ENV=production webpack --progress --config webpack.config.cjs.js"
   },
+  "files": [
+    "src",
+    "lib",
+    "umd"
+  ],
   "dependencies": {
     "socket.io-client": "^2.2.0",
     "vue-devtools": "*"
