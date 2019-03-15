@@ -6,5 +6,8 @@
   ],
   "repository": "git@github.com:jkzing/vue-devtools-app.git",
   "author": "jkzing <jingkai.zhao@foxmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^3.13.1"
+  }
 }
