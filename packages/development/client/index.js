@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import { installDevtools } from 'vue-remotedev/src'
+import router from './router'
+import store from './store'
+import App from './App.vue'
 
 installDevtools()
 
 new Vue({
-  data: {
-    name: 'zaihui'
-  },
-  render(h) {
-    return h('h1', this.name)
-  }
+  router,
+  store,
+  render: h => h(App)
 }).$mount('#app')
