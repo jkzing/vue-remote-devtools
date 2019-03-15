@@ -1,10 +1,9 @@
 {
   "name": "vue-remotedev-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/vue-remotedev-app.cjs.js",
   "license": "MIT",
   "scripts": {
-    "dev": "cd dev && webpack-dev-server --inline --hot --no-info",
     "build:umd": "webpack --progress --config webpack.config.umd.js",
     "build:umd:min": "NODE_ENV=production webpack --progress --config webpack.config.umd.js",
     "build:cjs": "rm -rf ./lib && NODE_ENV=production webpack --progress --config webpack.config.cjs.js"
