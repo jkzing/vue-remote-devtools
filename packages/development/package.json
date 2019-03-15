@@ -1,7 +1,7 @@
 {
   "name": "development",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -9,9 +9,9 @@
   },
   "devDependencies": {
     "vue-devtools": "*",
-    "vue-remotedev": "*",
-    "vue-remotedev-app": "*",
-    "vue-remotedev-cli": "*"
+    "vue-remotedev": "^0.0.1",
+    "vue-remotedev-app": "^0.0.1",
+    "vue-remotedev-cli": "^0.0.1"
   },
   "dependencies": {
     "vue": "^2.6.9",
